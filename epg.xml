@@ -42398,6 +42398,66 @@
   <programme start="20261116235700 +0800" channel="黄河卫视" stop="20261116235959 +0800">
     <title lang="zh">最后的战士(41)</title>
   </programme>
+  <programme start="20261117001000 +0800" channel="黄河卫视" stop="20261117021500 +0800">
+    <title lang="zh">谁是高手双升</title>
+  </programme>
+  <programme start="20261117021500 +0800" channel="黄河卫视" stop="20261117050000 +0800">
+    <title lang="zh">夜黄河剧场</title>
+  </programme>
+  <programme start="20261117050000 +0800" channel="黄河卫视" stop="20261117060000 +0800">
+    <title lang="zh">早间剧场</title>
+  </programme>
+  <programme start="20261117060000 +0800" channel="黄河卫视" stop="20261117070000 +0800">
+    <title lang="zh">早间剧场</title>
+  </programme>
+  <programme start="20261117070000 +0800" channel="黄河卫视" stop="20261117072500 +0800">
+    <title lang="zh">山西新闻联播</title>
+  </programme>
+  <programme start="20261117072500 +0800" channel="黄河卫视" stop="20261117075000 +0800">
+    <title lang="zh">汇通天下</title>
+  </programme>
+  <programme start="20261117075000 +0800" channel="黄河卫视" stop="20261117105500 +0800">
+    <title lang="zh">1890</title>
+  </programme>
+  <programme start="20261117105500 +0800" channel="黄河卫视" stop="20261117113000 +0800">
+    <title lang="zh">黄河大交通</title>
+  </programme>
+  <programme start="20261117113000 +0800" channel="黄河卫视" stop="20261117121500 +0800">
+    <title lang="zh">黄河新闻</title>
+  </programme>
+  <programme start="20261117121500 +0800" channel="黄河卫视" stop="20261117125500 +0800">
+    <title lang="zh">黄河一拨就灵</title>
+  </programme>
+  <programme start="20261117125500 +0800" channel="黄河卫视" stop="20261117142500 +0800">
+    <title lang="zh">谁是高手双升</title>
+  </programme>
+  <programme start="20261117142500 +0800" channel="黄河卫视" stop="20261117172000 +0800">
+    <title lang="zh">民生大剧场</title>
+  </programme>
+  <programme start="20261117172000 +0800" channel="黄河卫视" stop="20261117175000 +0800">
+    <title lang="zh">真相解码</title>
+  </programme>
+  <programme start="20261117175000 +0800" channel="黄河卫视" stop="20261117181800 +0800">
+    <title lang="zh">汇通天下</title>
+  </programme>
+  <programme start="20261117181800 +0800" channel="黄河卫视" stop="20261117185000 +0800">
+    <title lang="zh">黄河大交通</title>
+  </programme>
+  <programme start="20261117185000 +0800" channel="黄河卫视" stop="20261117194000 +0800">
+    <title lang="zh">黄河新闻</title>
+  </programme>
+  <programme start="20261117194000 +0800" channel="黄河卫视" stop="20261117202500 +0800">
+    <title lang="zh">1890</title>
+  </programme>
+  <programme start="20261117202500 +0800" channel="黄河卫视" stop="20261117205500 +0800">
+    <title lang="zh">真相解码</title>
+  </programme>
+  <programme start="20261117205500 +0800" channel="黄河卫视" stop="20261117232000 +0800">
+    <title lang="zh">黄河大剧场</title>
+  </programme>
+  <programme start="20261117232000 +0800" channel="黄河卫视" stop="20261118001000 +0800">
+    <title lang="zh">真相解码</title>
+  </programme>
   <programme start="20261110000000 +0800" channel="山西经济" stop="20261110002700 +0800">
     <title lang="zh">精彩呈现</title>
   </programme>
@@ -45431,44 +45491,53 @@
     <title lang="zh">精彩节目 (22:00-24:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261114 22:00-24:00)</desc>
   </programme>
-  <programme start="20261115014500 +0800" channel="太原1" stop="20261115070000 +0800">
-    <title lang="zh">午夜剧场:不惑之旅16-20</title>
+  <programme start="20261115000000 +0800" channel="太原1" stop="20261115020000 +0800">
+    <title lang="zh">精彩节目 (00:00-02:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 00:00-02:00)</desc>
   </programme>
-  <programme start="20261115070000 +0800" channel="太原1" stop="20261115073000 +0800">
-    <title lang="zh">新闻对话</title>
+  <programme start="20261115020000 +0800" channel="太原1" stop="20261115040000 +0800">
+    <title lang="zh">精彩节目 (02:00-04:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 02:00-04:00)</desc>
   </programme>
-  <programme start="20261115073000 +0800" channel="太原1" stop="20261115101000 +0800">
-    <title lang="zh">太原新闻</title>
+  <programme start="20261115040000 +0800" channel="太原1" stop="20261115060000 +0800">
+    <title lang="zh">精彩节目 (04:00-06:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 04:00-06:00)</desc>
   </programme>
-  <programme start="20261115101000 +0800" channel="太原1" stop="20261115124000 +0800">
-    <title lang="zh">黄金剧场:大家庭9-10</title>
+  <programme start="20261115060000 +0800" channel="太原1" stop="20261115080000 +0800">
+    <title lang="zh">精彩节目 (06:00-08:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 06:00-08:00)</desc>
   </programme>
-  <programme start="20261115124000 +0800" channel="太原1" stop="20261115150500 +0800">
-    <title lang="zh">新闻快车</title>
+  <programme start="20261115080000 +0800" channel="太原1" stop="20261115100000 +0800">
+    <title lang="zh">精彩节目 (08:00-10:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 08:00-10:00)</desc>
   </programme>
-  <programme start="20261115150500 +0800" channel="太原1" stop="20261115180500 +0800">
-    <title lang="zh">现代剧场:生死线23-24</title>
+  <programme start="20261115100000 +0800" channel="太原1" stop="20261115120000 +0800">
+    <title lang="zh">精彩节目 (10:00-12:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 10:00-12:00)</desc>
   </programme>
-  <programme start="20261115180500 +0800" channel="太原1" stop="20261115182100 +0800">
-    <title lang="zh">绿色时空</title>
+  <programme start="20261115120000 +0800" channel="太原1" stop="20261115140000 +0800">
+    <title lang="zh">精彩节目 (12:00-14:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 12:00-14:00)</desc>
   </programme>
-  <programme start="20261115182100 +0800" channel="太原1" stop="20261115190000 +0800">
-    <title lang="zh">快车朋友圈</title>
+  <programme start="20261115140000 +0800" channel="太原1" stop="20261115160000 +0800">
+    <title lang="zh">精彩节目 (14:00-16:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 14:00-16:00)</desc>
   </programme>
-  <programme start="20261115190000 +0800" channel="太原1" stop="20261115193500 +0800">
-    <title lang="zh">新闻联播</title>
+  <programme start="20261115160000 +0800" channel="太原1" stop="20261115180000 +0800">
+    <title lang="zh">精彩节目 (16:00-18:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 16:00-18:00)</desc>
   </programme>
-  <programme start="20261115193500 +0800" channel="太原1" stop="20261115200000 +0800">
-    <title lang="zh">太原新闻</title>
+  <programme start="20261115180000 +0800" channel="太原1" stop="20261115200000 +0800">
+    <title lang="zh">精彩节目 (18:00-20:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 18:00-20:00)</desc>
   </programme>
-  <programme start="20261115200000 +0800" channel="太原1" stop="20261115204000 +0800">
-    <title lang="zh">快车朋友圈</title>
+  <programme start="20261115200000 +0800" channel="太原1" stop="20261115220000 +0800">
+    <title lang="zh">精彩节目 (20:00-22:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 20:00-22:00)</desc>
   </programme>
-  <programme start="20261115204000 +0800" channel="太原1" stop="20261115211000 +0800">
-    <title lang="zh">绿色时空</title>
-  </programme>
-  <programme start="20261115211000 +0800" channel="太原1" stop="20261116000000 +0800">
-    <title lang="zh">黄金剧场:我的绿水青山15-16</title>
+  <programme start="20261115220000 +0800" channel="太原1" stop="20261116000000 +0800">
+    <title lang="zh">精彩节目 (22:00-24:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 22:00-24:00)</desc>
   </programme>
   <programme start="20261116000000 +0800" channel="太原1" stop="20261116071000 +0800">
     <title lang="zh">新闻对话</title>
@@ -45494,25 +45563,7 @@
   <programme start="20261116200000 +0800" channel="太原1" stop="20261116215000 +0800">
     <title lang="zh">晚间剧场</title>
   </programme>
-  <programme start="20261116215000 +0800" channel="太原1" stop="20261116123000 +0800">
-    <title lang="zh">新闻对话</title>
-  </programme>
-  <programme start="20261116123000 +0800" channel="太原1" stop="20261116133800 +0800">
-    <title lang="zh">午间新闻</title>
-  </programme>
-  <programme start="20261116133800 +0800" channel="太原1" stop="20261116145000 +0800">
-    <title lang="zh">城市大通道</title>
-  </programme>
-  <programme start="20261116145000 +0800" channel="太原1" stop="20261116193400 +0800">
-    <title lang="zh">下午剧场</title>
-  </programme>
-  <programme start="20261116193400 +0800" channel="太原1" stop="20261116200000 +0800">
-    <title lang="zh">太原新闻</title>
-  </programme>
-  <programme start="20261116200000 +0800" channel="太原1" stop="20261116215000 +0800">
-    <title lang="zh">晚间剧场</title>
-  </programme>
-  <programme start="20261116215000 +0800" channel="太原1" stop="20261116235900 +0800">
+  <programme start="20261116215000 +0800" channel="太原1" stop="20261117000000 +0800">
     <title lang="zh">新闻对话</title>
   </programme>
   <programme start="20261110000000 +0800" channel="太原2" stop="20261110020000 +0800">
@@ -45755,59 +45806,53 @@
     <title lang="zh">精彩节目 (22:00-24:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261114 22:00-24:00)</desc>
   </programme>
-  <programme start="20261115011200 +0800" channel="太原2" stop="20261115013700 +0800">
-    <title lang="zh">养生堂</title>
+  <programme start="20261115000000 +0800" channel="太原2" stop="20261115020000 +0800">
+    <title lang="zh">精彩节目 (00:00-02:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 00:00-02:00)</desc>
   </programme>
-  <programme start="20261115013700 +0800" channel="太原2" stop="20261115020500 +0800">
-    <title lang="zh">今日交通</title>
+  <programme start="20261115020000 +0800" channel="太原2" stop="20261115040000 +0800">
+    <title lang="zh">精彩节目 (02:00-04:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 02:00-04:00)</desc>
   </programme>
-  <programme start="20261115020500 +0800" channel="太原2" stop="20261115071400 +0800">
-    <title lang="zh">我的选择</title>
+  <programme start="20261115040000 +0800" channel="太原2" stop="20261115060000 +0800">
+    <title lang="zh">精彩节目 (04:00-06:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 04:00-06:00)</desc>
   </programme>
-  <programme start="20261115071400 +0800" channel="太原2" stop="20261115084100 +0800">
-    <title lang="zh">快乐生活一点通</title>
+  <programme start="20261115060000 +0800" channel="太原2" stop="20261115080000 +0800">
+    <title lang="zh">精彩节目 (06:00-08:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 06:00-08:00)</desc>
   </programme>
-  <programme start="20261115084100 +0800" channel="太原2" stop="20261115094100 +0800">
-    <title lang="zh">健康时间</title>
+  <programme start="20261115080000 +0800" channel="太原2" stop="20261115100000 +0800">
+    <title lang="zh">精彩节目 (08:00-10:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 08:00-10:00)</desc>
   </programme>
-  <programme start="20261115094100 +0800" channel="太原2" stop="20261115120000 +0800">
-    <title lang="zh">综艺节目</title>
+  <programme start="20261115100000 +0800" channel="太原2" stop="20261115120000 +0800">
+    <title lang="zh">精彩节目 (10:00-12:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 10:00-12:00)</desc>
   </programme>
-  <programme start="20261115120000 +0800" channel="太原2" stop="20261115151500 +0800">
-    <title lang="zh">健康时间</title>
+  <programme start="20261115120000 +0800" channel="太原2" stop="20261115140000 +0800">
+    <title lang="zh">精彩节目 (12:00-14:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 12:00-14:00)</desc>
   </programme>
-  <programme start="20261115151500 +0800" channel="太原2" stop="20261115164500 +0800">
-    <title lang="zh">综艺节目</title>
+  <programme start="20261115140000 +0800" channel="太原2" stop="20261115160000 +0800">
+    <title lang="zh">精彩节目 (14:00-16:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 14:00-16:00)</desc>
   </programme>
-  <programme start="20261115164500 +0800" channel="太原2" stop="20261115180000 +0800">
-    <title lang="zh">健康时间</title>
+  <programme start="20261115160000 +0800" channel="太原2" stop="20261115180000 +0800">
+    <title lang="zh">精彩节目 (16:00-18:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 16:00-18:00)</desc>
   </programme>
-  <programme start="20261115180000 +0800" channel="太原2" stop="20261115182800 +0800">
-    <title lang="zh">养生堂</title>
+  <programme start="20261115180000 +0800" channel="太原2" stop="20261115200000 +0800">
+    <title lang="zh">精彩节目 (18:00-20:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 18:00-20:00)</desc>
   </programme>
-  <programme start="20261115182800 +0800" channel="太原2" stop="20261115190500 +0800">
-    <title lang="zh">快乐生活一点通</title>
+  <programme start="20261115200000 +0800" channel="太原2" stop="20261115220000 +0800">
+    <title lang="zh">精彩节目 (20:00-22:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 20:00-22:00)</desc>
   </programme>
-  <programme start="20261115190500 +0800" channel="太原2" stop="20261115204500 +0800">
-    <title lang="zh">百姓故事会</title>
-  </programme>
-  <programme start="20261115204500 +0800" channel="太原2" stop="20261115211800 +0800">
-    <title lang="zh">今日交通</title>
-  </programme>
-  <programme start="20261115211800 +0800" channel="太原2" stop="20261115220000 +0800">
-    <title lang="zh">我的选择</title>
-  </programme>
-  <programme start="20261115220000 +0800" channel="太原2" stop="20261115222600 +0800">
-    <title lang="zh">太原新闻</title>
-  </programme>
-  <programme start="20261115222600 +0800" channel="太原2" stop="20261115230000 +0800">
-    <title lang="zh">人间春色</title>
-  </programme>
-  <programme start="20261115230000 +0800" channel="太原2" stop="20261115233000 +0800">
-    <title lang="zh">快乐生活一点通</title>
-  </programme>
-  <programme start="20261115233000 +0800" channel="太原2" stop="20261116000000 +0800">
-    <title lang="zh">第一房产</title>
+  <programme start="20261115220000 +0800" channel="太原2" stop="20261116000000 +0800">
+    <title lang="zh">精彩节目 (22:00-24:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 22:00-24:00)</desc>
   </programme>
   <programme start="20261116002900 +0800" channel="太原2" stop="20261116011200 +0800">
     <title lang="zh">生活新发现</title>
@@ -45884,58 +45929,7 @@
   <programme start="20261116233000 +0800" channel="太原2" stop="20261116235000 +0800">
     <title lang="zh">第一房产</title>
   </programme>
-  <programme start="20261116235000 +0800" channel="太原2" stop="20261116120000 +0800">
-    <title lang="zh">旅行者</title>
-  </programme>
-  <programme start="20261116120000 +0800" channel="太原2" stop="20261116130400 +0800">
-    <title lang="zh">健康时间</title>
-  </programme>
-  <programme start="20261116130400 +0800" channel="太原2" stop="20261116142200 +0800">
-    <title lang="zh">养生堂</title>
-  </programme>
-  <programme start="20261116142200 +0800" channel="太原2" stop="20261116151500 +0800">
-    <title lang="zh">生活新发现</title>
-  </programme>
-  <programme start="20261116151500 +0800" channel="太原2" stop="20261116162800 +0800">
-    <title lang="zh">综艺节目</title>
-  </programme>
-  <programme start="20261116162800 +0800" channel="太原2" stop="20261116164500 +0800">
-    <title lang="zh">生活享当当</title>
-  </programme>
-  <programme start="20261116164500 +0800" channel="太原2" stop="20261116180000 +0800">
-    <title lang="zh">健康时间</title>
-  </programme>
-  <programme start="20261116180000 +0800" channel="太原2" stop="20261116182800 +0800">
-    <title lang="zh">养生堂</title>
-  </programme>
-  <programme start="20261116182800 +0800" channel="太原2" stop="20261116190500 +0800">
-    <title lang="zh">快乐生活一点通</title>
-  </programme>
-  <programme start="20261116190500 +0800" channel="太原2" stop="20261116200000 +0800">
-    <title lang="zh">百姓故事会</title>
-  </programme>
-  <programme start="20261116200000 +0800" channel="太原2" stop="20261116204500 +0800">
-    <title lang="zh">生活新发现</title>
-  </programme>
-  <programme start="20261116204500 +0800" channel="太原2" stop="20261116211800 +0800">
-    <title lang="zh">今日交通</title>
-  </programme>
-  <programme start="20261116211800 +0800" channel="太原2" stop="20261116220000 +0800">
-    <title lang="zh">我的选择</title>
-  </programme>
-  <programme start="20261116220000 +0800" channel="太原2" stop="20261116222600 +0800">
-    <title lang="zh">太原新闻</title>
-  </programme>
-  <programme start="20261116222600 +0800" channel="太原2" stop="20261116230000 +0800">
-    <title lang="zh">人间春色</title>
-  </programme>
-  <programme start="20261116230000 +0800" channel="太原2" stop="20261116233000 +0800">
-    <title lang="zh">快乐生活一点通</title>
-  </programme>
-  <programme start="20261116233000 +0800" channel="太原2" stop="20261116235000 +0800">
-    <title lang="zh">第一房产</title>
-  </programme>
-  <programme start="20261116235000 +0800" channel="太原2" stop="20261116235900 +0800">
+  <programme start="20261116235000 +0800" channel="太原2" stop="20261117000000 +0800">
     <title lang="zh">旅行者</title>
   </programme>
   <programme start="20261110000000 +0800" channel="太原3" stop="20261110020000 +0800">
@@ -46583,74 +46577,53 @@
     <title lang="zh">精彩节目 (22:00-24:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261114 22:00-24:00)</desc>
   </programme>
-  <programme start="20261115001800 +0800" channel="太原教育" stop="20261115072000 +0800">
-    <title lang="zh">影视艺术赏析</title>
+  <programme start="20261115000000 +0800" channel="太原教育" stop="20261115020000 +0800">
+    <title lang="zh">精彩节目 (00:00-02:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 00:00-02:00)</desc>
   </programme>
-  <programme start="20261115072000 +0800" channel="太原教育" stop="20261115080300 +0800">
-    <title lang="zh">大家学英语</title>
+  <programme start="20261115020000 +0800" channel="太原教育" stop="20261115040000 +0800">
+    <title lang="zh">精彩节目 (02:00-04:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 02:00-04:00)</desc>
   </programme>
-  <programme start="20261115080300 +0800" channel="太原教育" stop="20261115082000 +0800">
-    <title lang="zh">高端培训</title>
+  <programme start="20261115040000 +0800" channel="太原教育" stop="20261115060000 +0800">
+    <title lang="zh">精彩节目 (04:00-06:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 04:00-06:00)</desc>
   </programme>
-  <programme start="20261115082000 +0800" channel="太原教育" stop="20261115083000 +0800">
-    <title lang="zh">并州大课堂</title>
+  <programme start="20261115060000 +0800" channel="太原教育" stop="20261115080000 +0800">
+    <title lang="zh">精彩节目 (06:00-08:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 06:00-08:00)</desc>
   </programme>
-  <programme start="20261115083000 +0800" channel="太原教育" stop="20261115091500 +0800">
-    <title lang="zh">新闻直通车</title>
+  <programme start="20261115080000 +0800" channel="太原教育" stop="20261115100000 +0800">
+    <title lang="zh">精彩节目 (08:00-10:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 08:00-10:00)</desc>
   </programme>
-  <programme start="20261115091500 +0800" channel="太原教育" stop="20261115093500 +0800">
-    <title lang="zh">车源俱乐部</title>
+  <programme start="20261115100000 +0800" channel="太原教育" stop="20261115120000 +0800">
+    <title lang="zh">精彩节目 (10:00-12:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 10:00-12:00)</desc>
   </programme>
-  <programme start="20261115093500 +0800" channel="太原教育" stop="20261115103200 +0800">
-    <title lang="zh">食在龙城</title>
+  <programme start="20261115120000 +0800" channel="太原教育" stop="20261115140000 +0800">
+    <title lang="zh">精彩节目 (12:00-14:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 12:00-14:00)</desc>
   </programme>
-  <programme start="20261115103200 +0800" channel="太原教育" stop="20261115123000 +0800">
-    <title lang="zh">卡通派</title>
+  <programme start="20261115140000 +0800" channel="太原教育" stop="20261115160000 +0800">
+    <title lang="zh">精彩节目 (14:00-16:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 14:00-16:00)</desc>
   </programme>
-  <programme start="20261115123000 +0800" channel="太原教育" stop="20261115131300 +0800">
-    <title lang="zh">新闻直通车</title>
+  <programme start="20261115160000 +0800" channel="太原教育" stop="20261115180000 +0800">
+    <title lang="zh">精彩节目 (16:00-18:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 16:00-18:00)</desc>
   </programme>
-  <programme start="20261115131300 +0800" channel="太原教育" stop="20261115170000 +0800">
-    <title lang="zh">影视艺术</title>
+  <programme start="20261115180000 +0800" channel="太原教育" stop="20261115200000 +0800">
+    <title lang="zh">精彩节目 (18:00-20:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 18:00-20:00)</desc>
   </programme>
-  <programme start="20261115170000 +0800" channel="太原教育" stop="20261115173000 +0800">
-    <title lang="zh">前沿</title>
+  <programme start="20261115200000 +0800" channel="太原教育" stop="20261115220000 +0800">
+    <title lang="zh">精彩节目 (20:00-22:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 20:00-22:00)</desc>
   </programme>
-  <programme start="20261115173000 +0800" channel="太原教育" stop="20261115180000 +0800">
-    <title lang="zh">健康时空</title>
-  </programme>
-  <programme start="20261115180000 +0800" channel="太原教育" stop="20261115185200 +0800">
-    <title lang="zh">卡通派</title>
-  </programme>
-  <programme start="20261115185200 +0800" channel="太原教育" stop="20261115191700 +0800">
-    <title lang="zh">名师讲坛</title>
-  </programme>
-  <programme start="20261115191700 +0800" channel="太原教育" stop="20261115195000 +0800">
-    <title lang="zh">江南</title>
-  </programme>
-  <programme start="20261115195000 +0800" channel="太原教育" stop="20261115200000 +0800">
-    <title lang="zh">品书论画</title>
-  </programme>
-  <programme start="20261115200000 +0800" channel="太原教育" stop="20261115201000 +0800">
-    <title lang="zh">新闻直通车</title>
-  </programme>
-  <programme start="20261115201000 +0800" channel="太原教育" stop="20261115201500 +0800">
-    <title lang="zh">财智人生</title>
-  </programme>
-  <programme start="20261115201500 +0800" channel="太原教育" stop="20261115203000 +0800">
-    <title lang="zh">教育大家谈</title>
-  </programme>
-  <programme start="20261115203000 +0800" channel="太原教育" stop="20261115205300 +0800">
-    <title lang="zh">青春红绿灯</title>
-  </programme>
-  <programme start="20261115205300 +0800" channel="太原教育" stop="20261115212200 +0800">
-    <title lang="zh">小记者</title>
-  </programme>
-  <programme start="20261115212200 +0800" channel="太原教育" stop="20261115214500 +0800">
-    <title lang="zh">食在龙城</title>
-  </programme>
-  <programme start="20261115214500 +0800" channel="太原教育" stop="20261116000000 +0800">
-    <title lang="zh">影视艺术赏析</title>
+  <programme start="20261115220000 +0800" channel="太原教育" stop="20261116000000 +0800">
+    <title lang="zh">精彩节目 (22:00-24:00)</title>
+    <desc lang="zh">自动补全 2 小时时段 (20261115 22:00-24:00)</desc>
   </programme>
   <programme start="20261116001800 +0800" channel="太原教育" stop="20261116072000 +0800">
     <title lang="zh">影视艺术赏析</title>
@@ -46718,52 +46691,7 @@
   <programme start="20261116212200 +0800" channel="太原教育" stop="20261116214500 +0800">
     <title lang="zh">食在龙城</title>
   </programme>
-  <programme start="20261116214500 +0800" channel="太原教育" stop="20261116123000 +0800">
-    <title lang="zh">影视艺术赏析</title>
-  </programme>
-  <programme start="20261116123000 +0800" channel="太原教育" stop="20261116131300 +0800">
-    <title lang="zh">新闻直通车</title>
-  </programme>
-  <programme start="20261116131300 +0800" channel="太原教育" stop="20261116170000 +0800">
-    <title lang="zh">影视艺术</title>
-  </programme>
-  <programme start="20261116170000 +0800" channel="太原教育" stop="20261116173000 +0800">
-    <title lang="zh">前沿</title>
-  </programme>
-  <programme start="20261116173000 +0800" channel="太原教育" stop="20261116180000 +0800">
-    <title lang="zh">健康时空</title>
-  </programme>
-  <programme start="20261116180000 +0800" channel="太原教育" stop="20261116185200 +0800">
-    <title lang="zh">卡通派</title>
-  </programme>
-  <programme start="20261116185200 +0800" channel="太原教育" stop="20261116191700 +0800">
-    <title lang="zh">名师讲坛</title>
-  </programme>
-  <programme start="20261116191700 +0800" channel="太原教育" stop="20261116195000 +0800">
-    <title lang="zh">江南</title>
-  </programme>
-  <programme start="20261116195000 +0800" channel="太原教育" stop="20261116200000 +0800">
-    <title lang="zh">品书论画</title>
-  </programme>
-  <programme start="20261116200000 +0800" channel="太原教育" stop="20261116201000 +0800">
-    <title lang="zh">新闻直通车</title>
-  </programme>
-  <programme start="20261116201000 +0800" channel="太原教育" stop="20261116201500 +0800">
-    <title lang="zh">财智人生</title>
-  </programme>
-  <programme start="20261116201500 +0800" channel="太原教育" stop="20261116203000 +0800">
-    <title lang="zh">教育大家谈</title>
-  </programme>
-  <programme start="20261116203000 +0800" channel="太原教育" stop="20261116205300 +0800">
-    <title lang="zh">青春红绿灯</title>
-  </programme>
-  <programme start="20261116205300 +0800" channel="太原教育" stop="20261116212200 +0800">
-    <title lang="zh">小记者</title>
-  </programme>
-  <programme start="20261116212200 +0800" channel="太原教育" stop="20261116214500 +0800">
-    <title lang="zh">食在龙城</title>
-  </programme>
-  <programme start="20261116214500 +0800" channel="太原教育" stop="20261116235900 +0800">
+  <programme start="20261116214500 +0800" channel="太原教育" stop="20261117000000 +0800">
     <title lang="zh">影视艺术赏析</title>
   </programme>
   <programme start="20261116000000 +0800" channel="大同教育" stop="20261116020000 +0800">
@@ -64585,88 +64513,7 @@
   <programme start="20261116230000 +0800" channel="优优宝贝" stop="20261116233000 +0800">
     <title lang="zh">最强少年(1)</title>
   </programme>
-  <programme start="20261116233000 +0800" channel="优优宝贝" stop="20261116120000 +0800">
-    <title lang="zh">最强少年(2)</title>
-  </programme>
-  <programme start="20261116120000 +0800" channel="优优宝贝" stop="20261116123000 +0800">
-    <title lang="zh">最强少年(13)</title>
-  </programme>
-  <programme start="20261116123000 +0800" channel="优优宝贝" stop="20261116130000 +0800">
-    <title lang="zh">最强少年(12)</title>
-  </programme>
-  <programme start="20261116130000 +0800" channel="优优宝贝" stop="20261116133000 +0800">
-    <title lang="zh">最强少年(11)</title>
-  </programme>
-  <programme start="20261116133000 +0800" channel="优优宝贝" stop="20261116140000 +0800">
-    <title lang="zh">最强少年(10)</title>
-  </programme>
-  <programme start="20261116140000 +0800" channel="优优宝贝" stop="20261116143000 +0800">
-    <title lang="zh">最强少年(9)</title>
-  </programme>
-  <programme start="20261116143000 +0800" channel="优优宝贝" stop="20261116150000 +0800">
-    <title lang="zh">最强少年(8)</title>
-  </programme>
-  <programme start="20261116150000 +0800" channel="优优宝贝" stop="20261116153000 +0800">
-    <title lang="zh">最强少年(7)</title>
-  </programme>
-  <programme start="20261116153000 +0800" channel="优优宝贝" stop="20261116160000 +0800">
-    <title lang="zh">最强少年(6)</title>
-  </programme>
-  <programme start="20261116160000 +0800" channel="优优宝贝" stop="20261116163000 +0800">
-    <title lang="zh">最强少年(5)</title>
-  </programme>
-  <programme start="20261116163000 +0800" channel="优优宝贝" stop="20261116170000 +0800">
-    <title lang="zh">最强少年(4)</title>
-  </programme>
-  <programme start="20261116170000 +0800" channel="优优宝贝" stop="20261116173000 +0800">
-    <title lang="zh">最强少年(3)</title>
-  </programme>
-  <programme start="20261116173000 +0800" channel="优优宝贝" stop="20261116180000 +0800">
-    <title lang="zh">最强少年(2)</title>
-  </programme>
-  <programme start="20261116180000 +0800" channel="优优宝贝" stop="20261116183000 +0800">
-    <title lang="zh">最强少年(1)</title>
-  </programme>
-  <programme start="20261116183000 +0800" channel="优优宝贝" stop="20261116190000 +0800">
-    <title lang="zh">健康生活</title>
-  </programme>
-  <programme start="20261116190000 +0800" channel="优优宝贝" stop="20261116192500 +0800">
-    <title lang="zh">童音童律</title>
-  </programme>
-  <programme start="20261116192500 +0800" channel="优优宝贝" stop="20261116193500 +0800">
-    <title lang="zh">京彩之旅大美房山</title>
-  </programme>
-  <programme start="20261116193500 +0800" channel="优优宝贝" stop="20261116200000 +0800">
-    <title lang="zh">童音童律</title>
-  </programme>
-  <programme start="20261116200000 +0800" channel="优优宝贝" stop="20261116203000 +0800">
-    <title lang="zh">健康生活</title>
-  </programme>
-  <programme start="20261116203000 +0800" channel="优优宝贝" stop="20261116205000 +0800">
-    <title lang="zh">童音童律</title>
-  </programme>
-  <programme start="20261116205000 +0800" channel="优优宝贝" stop="20261116210000 +0800">
-    <title lang="zh">京彩之旅大美房山</title>
-  </programme>
-  <programme start="20261116210000 +0800" channel="优优宝贝" stop="20261116213000 +0800">
-    <title lang="zh">健康生活</title>
-  </programme>
-  <programme start="20261116213000 +0800" channel="优优宝贝" stop="20261116215000 +0800">
-    <title lang="zh">童音童律</title>
-  </programme>
-  <programme start="20261116215000 +0800" channel="优优宝贝" stop="20261116220000 +0800">
-    <title lang="zh">科普好书</title>
-  </programme>
-  <programme start="20261116220000 +0800" channel="优优宝贝" stop="20261116223000 +0800">
-    <title lang="zh">健康生活</title>
-  </programme>
-  <programme start="20261116223000 +0800" channel="优优宝贝" stop="20261116230000 +0800">
-    <title lang="zh">最强少年(16)</title>
-  </programme>
-  <programme start="20261116230000 +0800" channel="优优宝贝" stop="20261116233000 +0800">
-    <title lang="zh">最强少年(1)</title>
-  </programme>
-  <programme start="20261116233000 +0800" channel="优优宝贝" stop="20261116235900 +0800">
+  <programme start="20261116233000 +0800" channel="优优宝贝" stop="20261117000000 +0800">
     <title lang="zh">最强少年(2)</title>
   </programme>
   <programme start="20261110000000 +0800" channel="东方财经" stop="20261110010000 +0800">

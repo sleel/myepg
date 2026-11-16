@@ -1,0 +1,45 @@
+name: Update IPTV EPG
+
+on:
+  schedule:
+    # 每 6 小时自动同步一次（北京时间 01:15, 07:15, 13:15, 19:15）
+    - cron: '15 17,23,5,11 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'channels_epg.json'
+      - 'build_epg.py'
+      - '.github/workflows/update_epg.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-epg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate simplified 5-source EPG
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          python3 build_epg.py -c channels_epg.json -o epg.xml --no-report --cache-hours 0
+
+      - name: Commit and push updated EPG files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add epg.xml epg.xml.gz
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(epg): auto update EPG $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')"
+            git push
+          fi

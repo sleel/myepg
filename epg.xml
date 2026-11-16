@@ -237,8 +237,8 @@
   <channel id="晋能控股">
     <display-name lang="zh">晋能控股</display-name>
   </channel>
-  <channel id="山西焦煤">
-    <display-name lang="zh">山西焦煤</display-name>
+  <channel id="霍州煤电">
+    <display-name lang="zh">霍州煤电</display-name>
   </channel>
   <channel id="太原1">
     <display-name lang="zh">太原1</display-name>
@@ -386,9 +386,6 @@
   </channel>
   <channel id="金鹰卡通">
     <display-name lang="zh">金鹰卡通</display-name>
-  </channel>
-  <channel id="新动漫">
-    <display-name lang="zh">新动漫</display-name>
   </channel>
   <channel id="优优宝贝">
     <display-name lang="zh">优优宝贝</display-name>
@@ -15949,10 +15946,6 @@
     <title lang="zh">寻味中国</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
-  <programme start="20261117013000 +0800" channel="CGTN西语" stop="20261117014500 +0800">
-    <title lang="zh">寻味中国</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
   <programme start="20261117014500 +0800" channel="CGTN西语" stop="20261117020000 +0800">
     <title lang="zh">中国通</title>
     <desc lang="zh">欢迎使用</desc>
@@ -16043,6 +16036,10 @@
   </programme>
   <programme start="20261117130000 +0800" channel="CGTN西语" stop="20261117133000 +0800">
     <title lang="zh">综合新闻</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117133000 +0800" channel="CGTN西语" stop="20261117134500 +0800">
+    <title lang="zh">寻味中国</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261117133000 +0800" channel="CGTN西语" stop="20261117134500 +0800">
@@ -45203,51 +45200,51 @@
     <title lang="zh">精彩节目 (22:00-24:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 22:00-24:00)</desc>
   </programme>
-  <programme start="20261116000000 +0800" channel="山西焦煤" stop="20261116020000 +0800">
+  <programme start="20261116000000 +0800" channel="霍州煤电" stop="20261116020000 +0800">
     <title lang="zh">精彩节目 (00:00-02:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 00:00-02:00)</desc>
   </programme>
-  <programme start="20261116020000 +0800" channel="山西焦煤" stop="20261116040000 +0800">
+  <programme start="20261116020000 +0800" channel="霍州煤电" stop="20261116040000 +0800">
     <title lang="zh">精彩节目 (02:00-04:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 02:00-04:00)</desc>
   </programme>
-  <programme start="20261116040000 +0800" channel="山西焦煤" stop="20261116060000 +0800">
+  <programme start="20261116040000 +0800" channel="霍州煤电" stop="20261116060000 +0800">
     <title lang="zh">精彩节目 (04:00-06:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 04:00-06:00)</desc>
   </programme>
-  <programme start="20261116060000 +0800" channel="山西焦煤" stop="20261116080000 +0800">
+  <programme start="20261116060000 +0800" channel="霍州煤电" stop="20261116080000 +0800">
     <title lang="zh">精彩节目 (06:00-08:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 06:00-08:00)</desc>
   </programme>
-  <programme start="20261116080000 +0800" channel="山西焦煤" stop="20261116100000 +0800">
+  <programme start="20261116080000 +0800" channel="霍州煤电" stop="20261116100000 +0800">
     <title lang="zh">精彩节目 (08:00-10:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 08:00-10:00)</desc>
   </programme>
-  <programme start="20261116100000 +0800" channel="山西焦煤" stop="20261116120000 +0800">
+  <programme start="20261116100000 +0800" channel="霍州煤电" stop="20261116120000 +0800">
     <title lang="zh">精彩节目 (10:00-12:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 10:00-12:00)</desc>
   </programme>
-  <programme start="20261116120000 +0800" channel="山西焦煤" stop="20261116140000 +0800">
+  <programme start="20261116120000 +0800" channel="霍州煤电" stop="20261116140000 +0800">
     <title lang="zh">精彩节目 (12:00-14:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 12:00-14:00)</desc>
   </programme>
-  <programme start="20261116140000 +0800" channel="山西焦煤" stop="20261116160000 +0800">
+  <programme start="20261116140000 +0800" channel="霍州煤电" stop="20261116160000 +0800">
     <title lang="zh">精彩节目 (14:00-16:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 14:00-16:00)</desc>
   </programme>
-  <programme start="20261116160000 +0800" channel="山西焦煤" stop="20261116180000 +0800">
+  <programme start="20261116160000 +0800" channel="霍州煤电" stop="20261116180000 +0800">
     <title lang="zh">精彩节目 (16:00-18:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 16:00-18:00)</desc>
   </programme>
-  <programme start="20261116180000 +0800" channel="山西焦煤" stop="20261116200000 +0800">
+  <programme start="20261116180000 +0800" channel="霍州煤电" stop="20261116200000 +0800">
     <title lang="zh">精彩节目 (18:00-20:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 18:00-20:00)</desc>
   </programme>
-  <programme start="20261116200000 +0800" channel="山西焦煤" stop="20261116220000 +0800">
+  <programme start="20261116200000 +0800" channel="霍州煤电" stop="20261116220000 +0800">
     <title lang="zh">精彩节目 (20:00-22:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 20:00-22:00)</desc>
   </programme>
-  <programme start="20261116220000 +0800" channel="山西焦煤" stop="20261117000000 +0800">
+  <programme start="20261116220000 +0800" channel="霍州煤电" stop="20261117000000 +0800">
     <title lang="zh">精彩节目 (22:00-24:00)</title>
     <desc lang="zh">自动补全 2 小时时段 (20261116 22:00-24:00)</desc>
   </programme>
@@ -50995,10 +50992,6 @@
     <title lang="zh">电视播控中心播出结束</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
-  <programme start="20261117003000 +0800" channel="法治天地" stop="20261117055900 +0800">
-    <title lang="zh">电视播控中心播出结束</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
   <programme start="20261117055900 +0800" channel="法治天地" stop="20261117060500 +0800">
     <title lang="zh">电视播控中心播出开始</title>
     <desc lang="zh">欢迎使用</desc>
@@ -51069,6 +51062,10 @@
   </programme>
   <programme start="20261117130000 +0800" channel="法治天地" stop="20261117133000 +0800">
     <title lang="zh">案件聚焦:儿媳的孝心</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117133000 +0800" channel="法治天地" stop="20261117135500 +0800">
+    <title lang="zh">法治新闻</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261117133000 +0800" channel="法治天地" stop="20261117135500 +0800">
@@ -55533,10 +55530,6 @@
     <title lang="zh">电视播控中心播出结束</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
-  <programme start="20261117003000 +0800" channel="乐游" stop="20261117055900 +0800">
-    <title lang="zh">电视播控中心播出结束</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
   <programme start="20261117055900 +0800" channel="乐游" stop="20261117060000 +0800">
     <title lang="zh">电视播控中心播出开始</title>
     <desc lang="zh">欢迎使用</desc>
@@ -55631,6 +55624,10 @@
   </programme>
   <programme start="20261117132100 +0800" channel="乐游" stop="20261117132200 +0800">
     <title lang="zh">乐游旅拍大赛宣传片</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117132200 +0800" channel="乐游" stop="20261117135300 +0800">
+    <title lang="zh">寻找目的地</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261117132200 +0800" channel="乐游" stop="20261117135300 +0800">
@@ -58753,10 +58750,6 @@
     <title lang="zh">电视播控中心播出结束</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
-  <programme start="20261117003000 +0800" channel="游戏风云" stop="20261117055900 +0800">
-    <title lang="zh">电视播控中心播出结束</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
   <programme start="20261117055900 +0800" channel="游戏风云" stop="20261117060000 +0800">
     <title lang="zh">电视播控中心播出开始</title>
     <desc lang="zh">欢迎使用</desc>
@@ -58807,6 +58800,10 @@
   </programme>
   <programme start="20261117131500 +0800" channel="游戏风云" stop="20261117133000 +0800">
     <title lang="zh">游戏大厅:第五人格(3)</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117133000 +0800" channel="游戏风云" stop="20261117134500 +0800">
+    <title lang="zh">游戏大厅:东方华彩乱战(2)</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261117133000 +0800" channel="游戏风云" stop="20261117134500 +0800">
@@ -71546,6 +71543,22 @@
   <programme start="20261116234900 +0800" channel="金色学堂" stop="20261116235959 +0800">
     <title lang="zh">课间休息百变丝巾(1)</title>
   </programme>
+  <programme start="20261117000000 +0800" channel="金色学堂" stop="20261117002000 +0800">
+    <title lang="zh">大医来了:喉癌的防治与希望</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117002000 +0800" channel="金色学堂" stop="20261117002700 +0800">
+    <title lang="zh">课间休息、百变丝巾(1)</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117002700 +0800" channel="金色学堂" stop="20261117002800 +0800">
+    <title lang="zh">金色学堂以9为名频道宣传片</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117002800 +0800" channel="金色学堂" stop="20261117003000 +0800">
+    <title lang="zh">海洋风光</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
   <programme start="20261117003000 +0800" channel="金色学堂" stop="20261117055900 +0800">
     <title lang="zh">电视播控中心播出结束</title>
     <desc lang="zh">欢迎使用</desc>
@@ -71700,30 +71713,6 @@
   </programme>
   <programme start="20261117122000 +0800" channel="金色学堂" stop="20261117123500 +0800">
     <title lang="zh">生活好技艺:茶艺(6)</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117123500 +0800" channel="金色学堂" stop="20261117124400 +0800">
-    <title lang="zh">课间休息、百变丝巾(6)</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117124400 +0800" channel="金色学堂" stop="20261117125200 +0800">
-    <title lang="zh">课间休息、家庭花卉养护:绣球花</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117125200 +0800" channel="金色学堂" stop="20261117125900 +0800">
-    <title lang="zh">课间休息、家庭花卉养护:杜鹃花</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117125900 +0800" channel="金色学堂" stop="20261117130700 +0800">
-    <title lang="zh">皮具手工制作(1):初识手工皮具</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117130700 +0800" channel="金色学堂" stop="20261117131700 +0800">
-    <title lang="zh">皮具手工制作(2)</title>
-    <desc lang="zh">欢迎使用</desc>
-  </programme>
-  <programme start="20261117131700 +0800" channel="金色学堂" stop="20261117132400 +0800">
-    <title lang="zh">课间休息、家庭花卉养护(7)</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261117132400 +0800" channel="金色学堂" stop="20261117133100 +0800">
@@ -71944,6 +71933,14 @@
   </programme>
   <programme start="20261117234900 +0800" channel="金色学堂" stop="20261117235700 +0800">
     <title lang="zh">课间休息、烹饪:豆沙面包</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117235700 +0800" channel="金色学堂" stop="20261117235800 +0800">
+    <title lang="zh">金色学堂以9为名频道宣传片</title>
+    <desc lang="zh">欢迎使用</desc>
+  </programme>
+  <programme start="20261117235800 +0800" channel="金色学堂" stop="20261118000000 +0800">
+    <title lang="zh">海洋风光</title>
     <desc lang="zh">欢迎使用</desc>
   </programme>
   <programme start="20261116000000 +0800" channel="CHC动作电影" stop="20261116002500 +0800">

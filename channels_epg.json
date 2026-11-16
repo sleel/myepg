@@ -936,13 +936,13 @@
     "cdays": 1
   },
   {
-    "id": "山西焦煤",
+    "id": "霍州煤电",
     "group": "本省",
     "titles": [
-      "山西焦煤"
+      "霍州煤电"
     ],
     "aliases": [
-      "山西焦煤"
+      "霍州煤电"
     ],
     "catchup": true,
     "cdays": 1
@@ -1534,18 +1534,6 @@
     ],
     "catchup": true,
     "cdays": 7
-  },
-  {
-    "id": "新动漫",
-    "group": "动漫",
-    "titles": [
-      "新动漫"
-    ],
-    "aliases": [
-      "新动漫"
-    ],
-    "catchup": false,
-    "cdays": 0
   },
   {
     "id": "优优宝贝",

@@ -471,10 +471,12 @@
     "id": "北京卫视",
     "group": "卫视",
     "titles": [
-      "北京卫视"
+      "北京卫视",
+      "北京卫视4K"
     ],
     "aliases": [
-      "北京卫视"
+      "北京卫视",
+      "北京卫视4K"
     ],
     "catchup": true,
     "cdays": 7
@@ -545,10 +547,12 @@
     "id": "广东卫视",
     "group": "卫视",
     "titles": [
-      "广东卫视"
+      "广东卫视",
+      "广东卫视4K"
     ],
     "aliases": [
-      "广东卫视"
+      "广东卫视",
+      "广东卫视4K"
     ],
     "catchup": true,
     "cdays": 7
@@ -767,10 +771,12 @@
     "id": "深圳卫视",
     "group": "卫视",
     "titles": [
-      "深圳卫视"
+      "深圳卫视",
+      "深圳卫视4K"
     ],
     "aliases": [
-      "深圳卫视"
+      "深圳卫视",
+      "深圳卫视4K"
     ],
     "catchup": true,
     "cdays": 7
@@ -1076,8 +1082,8 @@
     "aliases": [
       "阳泉科教"
     ],
-    "catchup": true,
-    "cdays": 1
+    "catchup": false,
+    "cdays": 0
   },
   {
     "id": "平定综合",
@@ -1645,7 +1651,7 @@
   },
   {
     "id": "山东教育卫视",
-    "group": "卫视",
+    "group": "教育",
     "titles": [
       "山东教育卫视"
     ],
@@ -1717,73 +1723,37 @@
     "cdays": 1
   },
   {
-    "id": "北京卫视4K",
-    "group": "4K超高清",
-    "titles": [
-      "北京卫视4K"
-    ],
-    "aliases": [
-      "北京卫视4K"
-    ],
-    "catchup": true,
-    "cdays": 1
-  },
-  {
-    "id": "广东卫视4K",
-    "group": "4K超高清",
-    "titles": [
-      "广东卫视4K"
-    ],
-    "aliases": [
-      "广东卫视4K"
-    ],
-    "catchup": true,
-    "cdays": 1
-  },
-  {
-    "id": "深圳卫视4K",
-    "group": "4K超高清",
-    "titles": [
-      "深圳卫视4K"
-    ],
-    "aliases": [
-      "深圳卫视4K"
-    ],
-    "catchup": true,
-    "cdays": 1
-  },
-  {
-    "id": "凤凰中文HD",
+    "id": "凤凰中文",
     "group": "凤凰卫视",
     "titles": [
-      "凤凰中文HD"
+      "凤凰中文"
     ],
     "aliases": [
-      "凤凰中文HD"
+      "凤凰中文"
     ],
     "catchup": false,
     "cdays": 0
   },
   {
-    "id": "凤凰资讯HD",
+    "id": "凤凰资讯",
     "group": "凤凰卫视",
     "titles": [
-      "凤凰资讯HD"
+      "凤凰资讯"
     ],
     "aliases": [
-      "凤凰资讯HD"
+      "凤凰资讯"
     ],
     "catchup": false,
     "cdays": 0
   },
   {
-    "id": "凤凰香港HD",
+    "id": "凤凰香港",
     "group": "凤凰卫视",
     "titles": [
-      "凤凰香港HD"
+      "凤凰香港"
     ],
     "aliases": [
-      "凤凰香港HD"
+      "凤凰香港"
     ],
     "catchup": false,
     "cdays": 0

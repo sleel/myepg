@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate simplified 5-source EPG
+      - name: Generate fault-tolerant EPG (5 active + 7 failover)
         env:
           TZ: Asia/Shanghai
         run: |

@@ -273,6 +273,9 @@
   <channel id="阳泉新闻综合">
     <display-name lang="zh">阳泉新闻综合</display-name>
   </channel>
+  <channel id="阳泉科教">
+    <display-name lang="zh">阳泉科教</display-name>
+  </channel>
   <channel id="平定综合">
     <display-name lang="zh">平定综合</display-name>
   </channel>

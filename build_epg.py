@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-山西联通 IPTV 精简 5 源聚合 EPG 生成器（独立公开仓库版 · Windows / Linux LXC / GitHub Actions 通用，零第三方依赖）
+山西联通 IPTV 12 源容错聚合 EPG 生成器（独立公开仓库版 · Windows / Linux LXC / GitHub Actions 通用，零第三方依赖）
 
 支持两种输入：
   1. 脱敏频道清单 JSON (-c channels_epg.json，默认，不含任何账号/AuthInfo/内网IP，适合公开仓库)
   2. 完整 M3U 文件   (-m atv_catchup.m3u，本地调试或私有仓库兼容模式)
 
-精简 5 源（按优先级聚合）：
+12 源分级机制（默认仅启用前 5 个主力源；任意主力失败/空数据时按备选优先级自动唤醒其余 7 个备用源容错）：
+  [主力启用 5 源]
   1. gsls_e9    : 主力全覆盖（过去7天 + 今明）
   2. erw        : 补全山西本省 4 套及文化精品/生活时尚/东方财经等 13 台完整 7 天
   3. epgpw_cn   : 独家补充 太原1 / 太原2 / 太原教育 / 优优宝贝
   4. tak_112114 : 独家补充 太原3（太原社教法制）
-  5. zsdc       : 轻量兜底备用源
+  5. zsdc       : 轻量兜底主力源
+  [备用待命 7 源]
+  6~12. gsls_e7 / gsls_e / tak_51zmte1 / tak_51zmte2 / tak_51zmt / epgpw_hk / epgpw_tw（加 --all-sources 可强制全拉）
 
 生成裁剪规则：
   - 7天回看 (catchup-days="7") : 保留过去7天+今+明（若明日无真实预告则留空），过去7天缺日按 12×2h(精彩节目) 补满
@@ -33,13 +36,33 @@ import xml.etree.ElementTree as ET
 
 BJT = datetime.timezone(datetime.timedelta(hours=8))
 
-PUBLIC_SOURCES = [
-    ("gsls_e9", "https://gitee.com/gsls200808/xmltvepg/raw/master/e9.xml.gz"),
-    ("erw", "https://gitee.com/taksssss/tv/raw/main/epg/erw.xml.gz"),
-    ("epgpw_cn", "https://gitee.com/taksssss/tv/raw/main/epg/epgpw_cn.xml.gz"),
-    ("tak_112114", "https://gitee.com/taksssss/tv/raw/main/epg/112114.xml.gz"),
-    ("zsdc", "https://epg.zsdc.eu.org/t.xml.gz"),
+# 全量 12 源配置：(源标识, 下载地址, 是否默认启用为主力源)
+SOURCE_REGISTRY = [
+    ("gsls_e9", "https://gitee.com/gsls200808/xmltvepg/raw/master/e9.xml.gz", True),
+    ("erw", "https://gitee.com/taksssss/tv/raw/main/epg/erw.xml.gz", True),
+    ("epgpw_cn", "https://gitee.com/taksssss/tv/raw/main/epg/epgpw_cn.xml.gz", True),
+    ("tak_112114", "https://gitee.com/taksssss/tv/raw/main/epg/112114.xml.gz", True),
+    ("zsdc", "https://epg.zsdc.eu.org/t.xml.gz", True),
+    ("gsls_e7", "https://gitee.com/gsls200808/xmltvepg/raw/master/e7.xml.gz", False),
+    ("gsls_e", "https://gitee.com/gsls200808/xmltvepg/raw/master/e.xml.gz", False),
+    ("tak_51zmte1", "https://gitee.com/taksssss/tv/raw/main/epg/51zmte1.xml.gz", False),
+    ("tak_51zmte2", "https://gitee.com/taksssss/tv/raw/main/epg/51zmte2.xml.gz", False),
+    ("tak_51zmt", "https://gitee.com/taksssss/tv/raw/main/epg/51zmt.xml.gz", False),
+    ("epgpw_hk", "https://gitee.com/taksssss/tv/raw/main/epg/epgpw_hk.xml.gz", False),
+    ("epgpw_tw", "https://gitee.com/taksssss/tv/raw/main/epg/epgpw_tw.xml.gz", False),
 ]
+
+PUBLIC_SOURCES = [(name, url) for name, url, enabled in SOURCE_REGISTRY if enabled]
+BACKUP_SOURCES = [(name, url) for name, url, enabled in SOURCE_REGISTRY if not enabled]
+
+# 各主力源失效时的优先替补顺序（其余未列出备用源随后补位）
+FAILOVER_PREFS = {
+    "gsls_e9": ["gsls_e7", "gsls_e", "tak_51zmte1", "tak_51zmt", "tak_51zmte2"],
+    "erw": ["tak_51zmte1", "tak_51zmt", "tak_51zmte2", "gsls_e7"],
+    "epgpw_cn": ["epgpw_hk", "epgpw_tw", "tak_51zmt", "tak_51zmte1"],
+    "tak_112114": ["tak_51zmt", "tak_51zmte1", "tak_51zmte2", "gsls_e7"],
+    "zsdc": ["gsls_e7", "tak_51zmt", "gsls_e"],
+}
 
 MANUAL_ALIASES = {
     "文化精品": ["文化精品", "CCTV央视文化精品", "央视文化精品", "央视精品"],
@@ -271,14 +294,75 @@ def _match_channel_ids(cid: str, aliases: list, name_to_cids: dict, norm_to_cids
     return mcids, mname, way
 
 
+def _apply_source_xml(
+    sname: str,
+    surl: str,
+    channels: dict,
+    data_store: dict,
+    primary_hit: dict,
+    sample_title: dict,
+    min_7d_keep: str,
+    today_s: str,
+    tomorrow_s: str,
+    cache_dir: str,
+    cache_hours: float,
+):
+    """下载并解析单个 XMLTV 源，填入仍缺日的频道数据。"""
+    xml_bytes = fetch_source_xml(sname, surl, cache_dir=cache_dir, cache_hours=cache_hours)
+    name_to_cids, norm_to_cids, cid_to_primary, progs_by_scid = _index_source_xml(xml_bytes)
+    if not progs_by_scid:
+        raise ValueError(f"{sname} 返回空 XMLTV 节目数据")
+
+    for cid, info in channels.items():
+        allowed_min = min_7d_keep if (info["catchup"] and info["cdays"] >= 7) else today_s
+        mcids, mname, way = _match_channel_ids(
+            cid, info["aliases"], name_to_cids, norm_to_cids, cid_to_primary
+        )
+        added = False
+        for scid in mcids:
+            scid_days = progs_by_scid.get(scid, {})
+            for dkey, plist in scid_days.items():
+                if allowed_min <= dkey <= tomorrow_s and dkey not in data_store[cid] and plist:
+                    data_store[cid][dkey] = plist
+                    added = True
+            if cid not in sample_title and today_s in scid_days:
+                for p in scid_days[today_s]:
+                    if len(p["start"]) >= 12 and p["start"][8:12] >= "1800":
+                        sample_title[cid] = f"{p['start'][8:10]}:{p['start'][10:12]} {p['title']}"
+                        break
+                if cid not in sample_title and scid_days[today_s]:
+                    p0 = scid_days[today_s][0]
+                    sample_title[cid] = f"{p0['start'][8:10]}:{p0['start'][10:12]} {p0['title']}"
+        if added and cid not in primary_hit:
+            primary_hit[cid] = {"src": sname, "name": mname, "way": way}
+
+
+def _build_failover_queue(failed_primaries: list) -> list:
+    """根据失效的主力源名生成去重后的备用源激活队列（先对应替补，后剩余备用）。"""
+    backup_map = dict(BACKUP_SOURCES)
+    ordered = []
+    seen = set()
+    for p in failed_primaries:
+        for bname in FAILOVER_PREFS.get(p, []):
+            if bname in backup_map and bname not in seen:
+                seen.add(bname)
+                ordered.append((bname, backup_map[bname]))
+    for bname, burl in BACKUP_SOURCES:
+        if bname not in seen:
+            seen.add(bname)
+            ordered.append((bname, burl))
+    return ordered
+
+
 def run_build(
     channels: dict,
     out_xml: str,
     report_path: str = "",
     cache_dir: str = "",
     cache_hours: float = 0.0,
+    all_sources: bool = False,
 ) -> dict:
-    """执行 5 源聚合、按频道实测等级裁剪/补齐并输出 XMLTV 与匹配详情。"""
+    """执行 12 源分级聚合（默认仅拉主力 5 源，异常时自动唤醒备用 7 源），裁剪/补齐并输出 XMLTV。"""
     today = datetime.datetime.now(BJT).date()
     today_s = today.strftime("%Y%m%d")
     tomorrow_s = (today + datetime.timedelta(days=1)).strftime("%Y%m%d")
@@ -289,39 +373,38 @@ def run_build(
     primary_hit = {}
     sample_title = {}
 
-    for sname, surl in PUBLIC_SOURCES:
+    active_sources = [(n, u) for n, u, _ in SOURCE_REGISTRY] if all_sources else PUBLIC_SOURCES
+    failed_primaries = []
+    for sname, surl in active_sources:
         try:
-            xml_bytes = fetch_source_xml(sname, surl, cache_dir=cache_dir, cache_hours=cache_hours)
-            name_to_cids, norm_to_cids, cid_to_primary, progs_by_scid = _index_source_xml(xml_bytes)
-
-            for cid, info in channels.items():
-                allowed_min = min_7d_keep if (info["catchup"] and info["cdays"] >= 7) else today_s
-                mcids, mname, way = _match_channel_ids(
-                    cid, info["aliases"], name_to_cids, norm_to_cids, cid_to_primary
-                )
-                added = False
-                for scid in mcids:
-                    scid_days = progs_by_scid.get(scid, {})
-                    for dkey, plist in scid_days.items():
-                        if allowed_min <= dkey <= tomorrow_s and dkey not in data_store[cid] and plist:
-                            data_store[cid][dkey] = plist
-                            added = True
-                    if cid not in sample_title and today_s in scid_days:
-                        for p in scid_days[today_s]:
-                            if len(p["start"]) >= 12 and p["start"][8:12] >= "1800":
-                                sample_title[cid] = f"{p['start'][8:10]}:{p['start'][10:12]} {p['title']}"
-                                break
-                        if cid not in sample_title and scid_days[today_s]:
-                            p0 = scid_days[today_s][0]
-                            sample_title[cid] = f"{p0['start'][8:10]}:{p0['start'][10:12]} {p0['title']}"
-                if added and cid not in primary_hit:
-                    primary_hit[cid] = {"src": sname, "name": mname, "way": way}
+            _apply_source_xml(
+                sname, surl, channels, data_store, primary_hit, sample_title,
+                min_7d_keep, today_s, tomorrow_s, cache_dir, cache_hours,
+            )
         except Exception as exc:
-            print(f"[{sname}] 跳过: {exc}")
+            print(f"[{sname}] 拉取/解析失败 ({exc})，已跳过")
+            failed_primaries.append(sname)
 
+    used_backups = []
+    if failed_primaries and not all_sources:
+        failover_queue = _build_failover_queue(failed_primaries)
+        print(f"[EPG 容错] 主力源 {failed_primaries} 异常，自动唤醒 {len(failover_queue)} 个备用源补救...")
+        for bname, burl in failover_queue:
+            try:
+                _apply_source_xml(
+                    bname, burl, channels, data_store, primary_hit, sample_title,
+                    min_7d_keep, today_s, tomorrow_s, cache_dir, cache_hours,
+                )
+                used_backups.append(bname)
+            except Exception as exc:
+                print(f"[{bname}] 备用源跳过 ({exc})")
+
+    mode_desc = "全量 12 源" if all_sources else (
+        f"主力 5 源（故障自动切换启用备用: {', '.join(used_backups)}）" if used_backups else "主力 5 源启用（7 源备用待命，全量共 12 源）"
+    )
     epg_summary = {}
     report_lines = [
-        "# 山西联通 IPTV 精简 5 源 EPG 匹配结果",
+        f"# 山西联通 IPTV EPG 匹配结果（{mode_desc}）",
         "",
         "| # | 分组 | M3U 频道名 | `tvg-name` | 类型 | 主 EPG 源 | 源内名称 (`display-name`) | 匹配 | 7天实有 | 今日节目抽样 | 裁剪/补齐策略 |",
         "| :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: | :---: | :--- | :--- |",
@@ -383,7 +466,7 @@ def run_build(
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
 
-    root = ET.Element("tv", {"generator-info-name": "Shanxi-Unicom-EPG-5Src"})
+    root = ET.Element("tv", {"generator-info-name": "Shanxi-Unicom-EPG-12Src"})
     for cid, info in channels.items():
         ch_el = ET.SubElement(root, "channel", {"id": cid})
         for al in info["aliases"]:
@@ -418,7 +501,7 @@ def run_build(
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    parser = argparse.ArgumentParser(description="山西联通 IPTV 精简 5 源 EPG 生成器")
+    parser = argparse.ArgumentParser(description="山西联通 IPTV 12 源容错聚合 EPG 生成器（默认仅启用 5 主力，异常时自动唤醒 7 备用）")
     parser.add_argument("-c", "--config", default=os.path.join(base_dir, "channels_epg.json"), help="脱敏 JSON 频道清单（默认）")
     parser.add_argument("-m", "--m3u", default="", help="可选：直接从 M3U 读取频道列表（若指定则覆盖 -c）")
     parser.add_argument("-o", "--output", default=os.path.join(base_dir, "epg.xml"), help="输出 XMLTV 路径")
@@ -426,10 +509,11 @@ def main():
     parser.add_argument("--no-report", action="store_true", help="不单独输出报告文件")
     parser.add_argument("--cache-dir", default=os.path.join(base_dir, ".epg_cache"), help="本地 XML 缓存目录")
     parser.add_argument("--cache-hours", type=float, default=0.0, help="缓存有效期（小时，默认 0 每次拉最新）")
+    parser.add_argument("--all-sources", action="store_true", help="强制同时拉取全部 12 源（默认仅主力 5 源 + 异常自动容错备用 7 源）")
     args = parser.parse_args()
 
     channels = parse_m3u(args.m3u) if args.m3u else load_channels_config(args.config)
-    run_build(channels, args.output, "" if args.no_report else args.report, args.cache_dir, args.cache_hours)
+    run_build(channels, args.output, "" if args.no_report else args.report, args.cache_dir, args.cache_hours, args.all_sources)
 
 
 if __name__ == "__main__":
